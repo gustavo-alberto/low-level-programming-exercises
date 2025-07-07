@@ -1,0 +1,8 @@
+services:
+  llpe:
+    build: .
+    container_name: llpe
+    volumes:
+      - ./src:/app # Mount local 'src' folder into '/app' inside the container
+    stdin_open: true # Keep standard input open (interactive mode)
+    tty: true # Allocate a pseudo-TTY for terminal access
